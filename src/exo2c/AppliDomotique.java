@@ -19,7 +19,7 @@ public class AppliDomotique {
 	}
 	
 	public static void connecter(String nomClasse) {
-		FabriqueGenerique fabrique = new FabriqueGenerique();
+		IFabriqueConnectable fabrique = new FabriqueConnectable();
 		IConnectable c = fabrique.creer(nomClasse);
 		if (c != null) {
 			lesConnectes.add(c);

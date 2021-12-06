@@ -1,6 +1,6 @@
 import java.lang.reflect.InvocationTargetException;
 
-public class FabriqueGenerique {
+public class FabriqueConnectable implements IFabriqueConnectable {
 	public IConnectable creer(String nomConnectable) {
 		IConnectable connectable = null;
 		try {
